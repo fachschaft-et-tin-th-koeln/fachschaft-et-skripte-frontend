@@ -8,4 +8,4 @@ import '@/assets/css/index.css'
 createApp(App)
 	.use(store)
 	.use(router)
-	.mount('#app')
+	.mount('body')
