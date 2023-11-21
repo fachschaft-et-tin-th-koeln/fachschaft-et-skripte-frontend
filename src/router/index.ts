@@ -1,17 +1,13 @@
 import { createRouter, createWebHistory, RouteRecordRaw } from 'vue-router'
-import HomeView from '../views/HomeView.vue'
+
+import LandingPage from '@/views/pages/landing/landing.page.vue'
 
 const routes: Array<RouteRecordRaw> = [
 	{
 		path: '/',
-		name: 'home',
-		component: HomeView
+		name: 'landing',
+		component: LandingPage
 	},
-	{
-		path: '/about',
-		name: 'about',
-		component: () => import(/* webpackChunkName: "about" */ '../views/AboutView.vue')
-	}
 ]
 
 const router = createRouter({

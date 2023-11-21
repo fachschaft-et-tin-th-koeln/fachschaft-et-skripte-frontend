@@ -15,25 +15,32 @@ module.exports = {
 		colors: {
 			'primary': 'rgb(18, 123, 202)',
 			'secondary': 'rgb(226 232 240',
-			'success': 'rgb(5 150 105',
-			'info': 'rgb(6 182 212',
-			'warning': 'rgb(250 204 21',
-			'pending': 'rgb(245 158 11',
-			'danger': 'rgb(225 29 72',
-			'light': 'rgb(241 245 249',
-			'dark': 'rgb(30 41 59',
+			'success': 'rgb(5 150 105)',
+			'info': 'rgb(6 182 212)',
+			'warning': 'rgb(250 204 21)',
+			'pending': 'rgb(245 158 11)',
+			'danger': 'rgb(225 29 72)',
+			'light': 'rgb(241 245 249)',
+			'dark': 'rgb(30 41 59)',
 			transparent: colors.transparent,
 			slate: colors.slate,
 			white: colors.white,
 			black: colors.black,
+			orange: colors.orange,
+			grey: colors.grey
 		},
-		extends: {
+		extend: {
 			spacing: {
 				// 15: "3.75rem",
 			},
 			colors: {
 				'black': colors.black,
 				'green': colors.green,
+
+				'dark-grey': {
+					700: 'rgb(72 85 133)',
+					900: 'rgb(27 37 89 )'
+				}
 			},
 			translate: {
 				0: 'translate(0)'
@@ -49,6 +56,9 @@ module.exports = {
 			maxWidth: {
 				'auto': 'auto',
 			},
+		},
+		container: {
+			center: true,
 		},
 	},
 	plugins: [

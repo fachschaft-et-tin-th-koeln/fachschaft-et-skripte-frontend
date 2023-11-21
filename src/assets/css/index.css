@@ -1,3 +1,83 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+
+	html {
+		line-height: 1.5;
+		-webkit-text-size-adjust: 100%;
+		-moz-tab-size: 4;
+		-o-tab-size: 4;
+		tab-size: 4;
+		font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+		font-feature-settings: normal;
+		font-variation-settings: normal;
+	}
+
+	body {
+		/* background-image: url(tile.png); */
+		background-repeat: repeat;
+		background-size: 30px 30px;
+		background-color: #f8f9fe;
+		-webkit-font-smoothing: antialiased;
+	}
+
+	body {
+		font-family: inherit;
+		line-height: inherit;
+	}
+
+	.inherit {
+		position: inherit;
+	}
+}
+
+@layer components {
+	.container {
+		width: 100%;
+		margin-right: auto;
+		margin-left: auto;
+		padding-right: .75rem;
+		padding-left: .75rem;
+	}
+
+	@media (min-width: 1024px) {
+		.container {
+			padding-right: 2.5rem;
+			padding-left: 2.5rem;
+		}
+	}
+}
+
+.nav-items {
+
+	.nav-link {
+		@apply font-bold;
+		@apply text-sm;
+		@apply text-dark-grey-900;
+		@apply hover:text-orange-600;
+		@apply duration-700;
+	}
+
+	.nav-button.nav-link {
+		@apply flex;
+		@apply items-center;
+
+		@apply px-4;
+		@apply py-2;
+		@apply rounded-xl;
+		@apply bg-orange-100;
+		@apply text-orange-600;
+		@apply hover:bg-orange-600;
+		@apply hover:text-white;
+		@apply transition;
+	}
+}
+
+.nav-link {
+	@apply text-sm;
+	@apply font-normal;
+	@apply text-dark-grey-700;
+	@apply hover:text-orange-900
+}
